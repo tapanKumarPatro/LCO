@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LCO</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="interview_questions_for_data_structure">Interview Questions for Datastructure.</string>
+
+
+    <string name="app_id">ca-app-pub-2337868013684078~5908391908</string>
+    <string name="unit_id">ca-app-pub-2337868013684078/8745597792</string>
+
+</resources>

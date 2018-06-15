@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/grident_background"
+    tools:context=".QuestionListActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.1"
+                android:src="@drawable/lco_logo" />
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:adSize="BANNER"
+                app:adUnitId="ca-app-pub-2337868013684078/8745597792">
+            </com.google.android.gms.ads.AdView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+
+                <FrameLayout
+                    android:id="@+id/fm_que"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        app:cardBackgroundColor="@color/icons"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="20dp">
+
+                            <TextView
+                                android:id="@+id/tv_que_no"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:text="Q1."
+                                android:textColor="#000"
+                                android:textSize="20sp"
+                                tools:ignore="RtlCompat" />
+
+
+                            <TextView
+                                android:id="@+id/tv_que"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:text="What are Binary trees?"
+                                android:textColor="#000"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/fm_ans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_ans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        app:cardBackgroundColor="@color/icons"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="10dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/ans_back">
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="20dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:text="Ans."
+                                android:textColor="#000"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:id="@+id/tv_ans"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:text="A Binary Tree is a type of data structure that has two nodes: A left node and a right node. In programming, binary trees are actually an extension of the linked list structures."
+                                android:textColor="#000"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+
+                </FrameLayout>
+
+
+                <TextView
+                    android:id="@+id/btn_answer"
+                    android:layout_width="130dp"
+                    android:visibility="gone"
+                    android:layout_height="45dp"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="-180dp"
+                    android:background="@drawable/btn_start_back"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Answer"
+                    android:textAlignment="center"
+                    android:textColor="#FFF"
+                    android:textSize="21sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_bottom_prev_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/tv_prev"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/prev_btn_back"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Prev."
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/tv_next"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/next_btn_back"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Next"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="21sp" />
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
